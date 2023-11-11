@@ -2,219 +2,441 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karthick_Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/b03cedb2ce.js"
+    <meta name="description" content="Welcome to Karthick Portfolio. " />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
-    ></script>
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-png"
+    />
+    <title>Portfolio | Karthick R</title>
   </head>
-    <script src="script.js" defer></script>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="" alt="" class="logo">
-          <ul id="sidemenu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certificate">Certificates</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-      <div class="header_text">
-        <h1>Hi, I'm <span>Karthick</span></h1>
-        <p>Student</p>
-      </div>
-    </div>
-  </div>
-    <!-- ABOUT -->
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="box1">
-            <img src="images/skills.png" />
-          </div>
-          <div class="box2">
-            <h1 class="sub_title">About Me</h1>
-            <p class="about_me">
-              Seeking a challenging position in a reputed organization where I
-              can learn new skills, expand my knowledge, and leverage my
-              learnings. To get an opportunity where I can make the best of my
-              potential and contribute to the organization’s growth.
-            </p>
-            <div class="tab_title">
-              <p class="sub_link active_link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="sub_link" onclick="opentab('experience')">Experience</p>
-              <p class="sub_link" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="content active_tab" id="skills">
-              <ul>
-                <li>
-                  <span>Web Development</span><br />HTML , CSS , Java Script
-                </li>
-                <li>
-                  <span>Programming languages</span><br />Java , Python , C
-                </li>
-                <li>
-                  <span>Technologies</span><br />Jsp , MySQL
-                </li>
-              </ul>
-            </div>
-            <div class="content" id="experience">
-              <ul>
-                <li>
-                  <span
-                    >IBM SkillBuild Internship: Front-End Development ( 6 weeks) </span
-                  ><br />
-                  I delved deep into HTML, CSS, and JavaScript, refining my
-                  front-end development prowess. Despite the virtual setting,
-                  collaborative efforts thrived, strengthening both technical
-                  and interpersonal skills. The culmination project exemplified
-                  the seamless fusion of these languages, resulting in a
-                  compelling user-centric web application.
-                </li>
-              </ul>
-            </div>
-            <div class="content" id="education">
-              <ul>
-                <li>
-                  <span
-                    >BE in Electonics and Communication Engineering
-                    (Pursuing)</span
-                  ><br />
-                  Karpagam College of Engineering , Coimbatore <br />
-                  Current CGPA : 8.38
-                </li>
-                <li>
-                  <span>HSC (2020 - 2021)</span><br />
-                  Balakrishna , Tirunelveli <br />
-                  Percentage : 93%
-                </li>
-                <li>
-                  <span>SSLC (2018 - 2019)</span><br />
-                  Balakrishna , Tirunelveli <br />
-                  Percentage : 93%
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- projects -->
-    <div id="projects">
-      <h1 class="sub_title">My Projects</h1>
-      <div class="container">
-        <div class="work_list">
-          <div>
-            <i class="fa-solid fa-diagram-project"></i>
-            <h2>Shortest Path finder</h2>
-            <p class="defn">
-              Dijkstra's algorithm for finding the shortest path in a weighted
-              graph. It features an interactive interface for creating and
-              visualizing graphs, with real-time updates as users modify the
-              structure. The combination of these technologies provides an
-              intuitive tool for exploring and understanding graph algorithms
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-regular fa-file"></i>
-            <h2>Document Analyzer</h2>
-            <p class="defn">
-              Employing advanced text processing, my project gauges similarity
-              between two documents. Techniques such as tokenization and TF-IDF
-              are leveraged for precise assessments. This tool finds
-              applications in information retrieval and plagiarism detection. A
-              powerful solution for text analysis tasks
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div>
-            <i class="fa-solid fa-rocket"></i>
-            <h2>JDBC</h2>
-            <p class="defn">
-              Utilizing JSP and MySQL, our food delivery site offers a seamless
-              experience. Customers can easily navigate menus, place orders, and
-              enjoy real-time tracking. The MySQL backend ensures efficient data
-              management for user profiles and order histories. Elevate your
-              dining experience with our innovative JSP-powered platform
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Certificates -->
-    <div id="certificate">
-      <h1 class="sub_title">My Certifications</h1>
-      <div class="container">
-        <div class="slider">
-          <img src="images/first.jpg" alt="" id="certi" />
-          <div class="button">
-            <button onclick="back()">
-              <i class="fa-solid fa-circle-left"></i>
-            </button>
-            <button onclick="next()">
-              <i class="fa-solid fa-circle-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- -----contact---------->
-    <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub_title">Contact Me</h1>
-            <p><i class="fa-regular fa-envelope"></i> rkkarthick68@gmail.com</p>
-            <p><i class="fa-solid fa-phone"></i> +91 8072495492</p>
-            <div class="social_media">
+  <body oncontextmenu="return false">
+    <header>
+      <!-- <a href="/" class="logo"><i class="fab fa-node-js"></i> RK</a> -->
+
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Project</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- hero section starts -->
+    <section class="home" id="home">
+      <div id="particles-js"></div>
+
+      <div class="content">
+        <h2>
+          Hi,<br />
+          I'm <span>Karthick</span>
+        </h2>
+        <p><span class="typing-text"></span></p>
+        <a href="assets/resume/Karthick_resume.pdf" class="btn" download
+          ><span>Download Resume</span>
+          <i class="fas fa-arrow-circle-down"></i>
+        
+        </a>
+        <div class="socials">
+          <ul class="social-icons">
+            <li>
               <a
-                class="linked"
+                class="linkedin"
+                aria-label="LinkedIn"
                 href="https://www.linkedin.com/in/karthick-rk07/"
-                ><i class="fa-brands fa-linkedin"></i
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
               ></a>
-              <a class="git" href="https://github.com/rkkarthi07"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-              <a class="face" href="https://www.facebook.com/karthick.rk.7773"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
+            </li>
+            <li>
               <a
-                class="insta"
-                href="https://www.instagram.com/_.karthick._.rk._/"
-                ><i class="fa-brands fa-instagram"></i
+                class="github"
+                aria-label="GitHub"
+                href="https://github.com/rkkarthi07/"
+                target="_blank"
+                ><i class="fab fa-github"></i
               ></a>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="image">
+        <img draggable="false" class="tilt" src="assets/img/profile.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
+
+      <div class="row">
+        <div class="image">
+          <img
+            draggable="false"
+            class="tilt"
+            src="./assets/img/project/portfolio.png"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h3>I'm Karthick</h3>
+          <span class="tag">Full Stack Developer</span>
+
+          <p>
+            I am a Full-Stack developer based in Pune, India. I am an
+            Information Technology undergraduate from SPPU. I am very passionate
+            about improving my coding skills & developing applications &
+            websites. I build WebApps and Websites using MERN Stack. Working for
+            myself to improve my skills. Love to build Full-Stack clones.
+          </p>
+
+          <div class="box-container">
+            <div class="box">
+              <p><span> email : </span> rkkarthick68.com</p>
+              <p><span> place : </span> Tirunelveli - 627105</p>
             </div>
-            <a href="images/Karthick_resume.pdf" class="btn btn2" download>Download Resume</a>
-          </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email"
-                required
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Your message"
-              ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- skills section starts -->
+    <section class="skills" id="skills">
+      <h2 class="heading">
+        <i class="fas fa-laptop"></i> Skills & <span>Abilities</span>
+      </h2>
+
+      <div class="container">
+        <div class="row" id="skillsContainer">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skills section ends -->
+    <section class="education" id="education">
+      <h1 class="heading">
+        <i class="fas fa-graduation-cap"></i> My <span>Education</span>
+      </h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="content">
+            <h3>Bachelor of Engineering in Electronics and Communication</h3>
+            <p>Karpagam College of Engineering |<span> Current CGPA:8.39</span> </p>
+            <h4>2021-2025 | Pursuing</h4>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <h3>HSC | Maths Biology</h3>
+            <p>Balakrishna Matric Hr Sec School | <span>93%</span></p>
+            <h4>2018-2021 | Completed</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Start Project Section -->
+    <section id="portfolio" class="portfolio">
+      <h2 class="heading">
+        <i class="fas fa-laptop-code"></i> My <span>Projects</span>
+      </h2>
+      <div class="box-container">
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>Shortest Path</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/graph_visualizer.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/graph_visualizer.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                  <a href="https://github.com/rkkarthi07/Graph_Visualizer">
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>Sorting Visualizer</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/sorting_visualizer.png"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/sorting_visualizer.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                  <a href="https://github.com/rkkarthi07/Sorting_Visualizer">
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>Portfolio</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/portfolio.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/portfolio.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                  <a href="https://github.com/rkkarthi07/My_Portfolio">
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <center><h4>Restaurant Management System</h4></center>
+            <div class="portfolio-wrap">
+              <img
+              src="assets/img/project/restaurant.jpeg"
+              class="img-fluid"
+              alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Restaurant Management System</h4>
+                <div class="portfolio-links">
+                  <a
+                  href="projects/restaurant.html"
+                  data-gall="portfolioDetailsGallery"
+                  data-vbtype="iframe"
+                  class="venobox"
+                  title="Project Details"
+                  ><i class="bx bx-info-circle"></i
+                    ></a>
+                    <a href="https://github.com/rkkarthi07/Food_Order-JDBC">
+                      <i class="bx bxl-github"></i>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <!-- <br> -->
+            <center><h4>Fire Fighting Robot</h4></center>
+            <div class="portfolio-wrap">
+              <img
+                src="assets/img/project/firefighter.jpg"
+                class="img-fluid"
+                alt=""
+              />
+              <div class="portfolio-info">
+                <h4>Fire Fighting Robot</h4>
+                <div class="portfolio-links">
+                  <a
+                    href="projects/firefighter.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-project">
+            <center><h4></h4></center>
+            <div class="portfolio-wrap">
+              <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a
+                    href="projects/vdg.html"
+                    data-gall="portfolioDetailsGallery"
+                    data-vbtype="iframe"
+                    class="venobox"
+                    title="Project Details"
+                    ><i class="bx bx-info-circle"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section starts -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+        <i class="fas fa-headset"></i> Contact <span>Me</span>
+      </h2>
+
+      <div class="container">
+        <div class="content">
+          <div class="social-box">
+            <div class="box-container">
+              <div class="box">
+                <h3>contact info</h3>
+                <p><i class="fas fa-phone-alt"></i>+91 8072495492</p>
+                <p><i class="fas fa-envelope"></i>rkkarthick68@gmail.com</p>
+                <p><i class="fas fa-map-marked-alt"></i>Tirunelveli 627105</p>
+                <div class="share">
+                  <a
+                    href="https://www.linkedin.com/in/karthick-rk07"
+                    class="fab fa-linkedin"
+                    aria-label="LinkedIn"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://github.com/rkkarthi07"
+                    class="fab fa-github"
+                    aria-label="GitHub"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="mailto:rkkarthick68@gmail.com"
+                    class="fas fa-envelope"
+                    aria-label="Mail"
+                    target="_blank"
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/_.karthick._.rk._"
+                    class="fab fa-instagram"
+                    aria-label="Instagram"
+                    target="_blank"
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="contact-form">
+            <div class="form-group">
+              <div class="field">
+                <input type="text" name="from_name" placeholder="Name" required />
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="field">
+                <input type="email" name="email_id" placeholder="Email" required />
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="field">
+                <input type="number" name="phone_no" placeholder="Phone" />
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="message">
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+                <i class="fas fa-comment-dots"></i>
+              </div>
+            </div>
+            <div class="button-area">
+              <button type="submit" id="submission">
+                Submit <i class="fa fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+    <section class="footer">
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.linkedin.com/in/karthick-rk07"> Karthick R</a>
+      </h1>
+    </section>
+    <!-- footer section ends -->
+
+    <!-- scroll top btn -->
+    <a
+      href="#home"
+      aria-label="ScrollTop"
+      class="fas fa-angle-up"
+      id="scroll-top"
+    ></a>
+    <!-- scroll back to top -->
+
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">      
+      (function () {
+          emailjs.init("FRUDoN36XjJ_ez7QM");
+      })();
+  </script>
+    
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
