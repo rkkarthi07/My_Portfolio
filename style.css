@@ -397,6 +397,7 @@ header .navbar ul li a:hover {
 .about .row .content p {
   font-size: 2rem;
   margin-top: 1.5rem;
+  text-align: justify;
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
@@ -407,12 +408,6 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
-}
-.about .row .content .box-container .box p {
-  text-transform: none;
-}
-.about .row .content .box-container .box p span {
-  color: #011aff;
 }
 
 /* about media queries starts*/
